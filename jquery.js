@@ -70,7 +70,7 @@ async function toUpperClass(grp,ysec){
 return await new Promise((resolve,reject)=>{
 
 
-firebase.firestore().collection("time_table").doc(getdata['col']).collection(grp).doc(ysec).get().then((doc)=>{
+firebase.firestore().collection("time_table").doc("Ali").collection(grp).doc(ysec).get().then((doc)=>{
 
  if (doc.exists) {
 
